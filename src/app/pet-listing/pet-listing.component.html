@@ -1,0 +1,4 @@
+<ng-container *ngFor="let pet of pets">
+    <p appBackGround [petType]="pet.type">{{ pet.name }}</p> <p>{{ pet.type }}</p>
+    <p>{{ pet.description | tooLong }}</p>
+</ng-container>

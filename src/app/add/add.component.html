@@ -1,0 +1,9 @@
+<form [formGroup]="addForm">
+  <label for="name">Name: </label>
+  <input type="text" formControlName="name">
+  <label for="type">Type: </label>
+  <input type="number" min="1" max="2" formControlName="type">
+  <label for="description">Description: </label>
+  <input type="text" formControlName="description">
+</form>
+<button [disabled]="addForm.invalid" (click)="onSaveChanges()">Add pet</button>
